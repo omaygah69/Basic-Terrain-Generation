@@ -29,7 +29,7 @@ while(!WindowShouldClose()){
     // HeightMap.TestMap();
     ClearBackground(RayWhite);
     BeginMode3D(camera);
-    DrawModel(model, MapPosition, 1.0f, Green);
+    DrawModel(model, MapPosition, 1.0f, DarkGreen);
     EndMode3D();
 
     // DrawTexture(texture, ScreenWidth - texture.Width - 20, 20, White);

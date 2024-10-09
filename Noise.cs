@@ -1,6 +1,7 @@
 using Raylib_cs;
 using static Raylib_cs.Raylib;
 using System.Numerics;
+
 public static class HeightMap
 {
     public static Image img;
@@ -10,7 +11,7 @@ public static class HeightMap
 
     public static void InitNoise()
     {
-        img = GenImagePerlinNoise(500, 500, 200, 200, 1.0f);
+        img = GenImagePerlinNoise(500, 500, 500, 500, 1.0f);
         texture = LoadTextureFromImage(img);
         ExportImage(img, "./perlinNoise.png");
     }
